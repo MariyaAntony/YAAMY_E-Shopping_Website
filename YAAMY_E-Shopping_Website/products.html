@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Products</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <script>
+        var images = document.getElementsByTagName("img");
+        for(var i = 0; i < images.length; i++) {
+            var image = images[i];
+            image.onclick = function(event) {
+                window.location.href = this.id + '.html';
+            };
+        }
+    </script>
+	<div id="header">
+		<div class="section">
+			<div class="logo">
+				<a href="home.html">yaamy</a>
+			</div>
+			<ul>
+				<li>
+					<a href="home.html">home</a>
+				</li>
+				<li>
+					<a href="about.html">about</a>
+				</li>
+				<li class="selected">
+					<a href="products.html">products</a>
+				</li>
+				<li>
+					<a href="news.html">news</a>
+				</li>
+				<li>
+					<a href="contact.html">contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="body">
+        <h3>Products</h3>
+        <ul>
+            <li>
+                
+                <a href="details.html"><img src="images/img1.jpg"  alt=""></a>
+                <figcaption>Home, Garden and Tools</figcaption>
+                
+            </li>
+            <li>
+                <a href="#"><img src="images/img2.jpg" alt=""></a>
+                <figcaption>Handmade</figcaption>
+                
+            </li>
+            <li>
+                <a href="#"><img src="images/img3.jpg" alt=""></a>
+                <figcaption>Food and Grocery</figcaption>
+                
+            </li>
+            <li>
+                <a href="#"><img src="images/img4.jpg" alt=""></a>
+                <figcaption>Beauty and Health</figcaption>
+                
+            </li>
+            <li>
+                <a href="#"><img src="images/img5.jpg" alt=""></a>
+                <figcaption>Sports and Outdoors</figcaption>
+                
+            </li>
+            <li>
+                <a href="#"><img src="images/img6.jpg" alt=""></a>
+                <figcaption>Books and Audibles</figcaption>
+                
+            </li>
+            <li>
+                <a href="#"><img src="images/img7.jpg" alt=""></a>
+                <figcaption>Electronics</figcaption>
+                
+            </li>
+            <li>
+                <a href="#"><img src="images/img8.jpg" alt=""></a>
+                <figcaption>Home Services</figcaption>
+                
+            </li>
+            <li>
+                <a href="#"><img src="images/img9.jpg" alt=""></a>
+                <figcaption>Automotive and Industrial</figcaption>
+                
+            </li>
+            <li>
+                <a href="#"><img src="images/img10.jpg" alt=""></a>
+                <figcaption>Toys, Kids and Baby</figcaption>
+                
+            </li>
+            <li>
+                <a href="#"><img src="images/img11.jpg" alt=""></a>
+                <figcaption>Movies</figcaption>
+                
+            </li>
+            <li>
+                <a href="#"><img src="images/img12.jpg" alt=""></a>
+                <figcaption>Music</figcaption>
+                
+            </li>
+            <li>
+                <a href="#"><img src="images/img13.jpg" alt=""></a>
+                <figcaption>Games</figcaption>
+                
+            </li>
+            <li>
+                <a href="#"><img src="images/img14.jpg" alt=""></a>
+                <figcaption>Clothing</figcaption>
+                
+            </li>
+            <li>
+                <a href="#"><img src="images/img15.jpg" alt=""></a>
+                <figcaption>Shoes</figcaption>
+                
+            </li>
+            <li>
+                <a href="#"><img src="images/img16.jpg" alt=""></a>
+                <figcaption>Jewellery</figcaption>
+                
+            </li>
+        </ul>
+		<a href="#" class="more">show more</a>
+	</div>
+	<div id="footer">
+		<div>
+			<div class="connect">
+                <a href="https://twitter.com/" id="twitter">twitter</a>
+                <a href="http://facebook.com" id="facebook">facebook</a>
+                <a href="http://googleplus.com" id="googleplus">googleplus</a>
+                <a href="http://pinterest.com" id="pinterest">pinterest</a>
+			</div>
+			<p>
+				&copy; copyright 2017 | created by Amita Haridas and Mariya Antony.
+			</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<div class="section">
+			<div class="logo">
+				<a href="index.html">yaamy</a>
+			</div>
+			<ul>
+				<li class="selected">
+					<a href="home.html">home</a>
+				</li>
+				<li>
+					<a href="about.html">about</a>
+				</li>
+				<li>
+					<a href="products.html">products</a>
+				</li>
+				<li>
+					<a href="news.html">news</a>
+				</li>
+				<li>
+					<a href="contact.html">contact</a>
+				</li>
+			</ul>
+		</div>
+        <div class="article">
+            <img class="mySlides" src="images/onlineShopping.jpg" >
+                <img class="mySlides" src="images/onlineShopping1.jpg" >
+                    <img class="mySlides" src="images/onlineShopping2.jpg" >
+                        <h1>Stay Home and Shop Online.</h1>
+        </div>
+        
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+
+		
+	</div>
+	<div id="body">
+		<ul>
+			<li>
+				<a href="products.html"><img src="images/img1.jpg" alt=""></a>
+				<b>Popular Departments</b>
+				<p>
+					Our online shopping system offers variety of deals and also products from different brands.
+				</p>
+			</li>
+			<li>
+				<a href="products.html"><img src="images/img2.jpg" alt=""></a>
+				<b>Deal of the day</b>
+				<p>
+					Our online shopping system offers variety of deals and also products from different brands.
+				</p>
+			</li>
+			<li>
+				<a href="products.html"><img src="images/img3.jpg" alt=""></a>
+				<b>Popular Destinations</b>
+				<p>
+					Our online shopping system offers variety of deals and also products from different brands.
+				</p>
+			</li>
+			<li>
+				<a href="products.html"><img src="images/img4.jpg" alt=""></a>
+				<b>Best Brands</b>
+				<p>
+					Our online shopping system offers variety of deals and also products from different brands.
+				</p>
+			</li>
+		</ul>
+		<div>
+			<div class="featured">
+				<h2>Editor's Pick</h2>
+				<img src="images/featured.jpg" alt="">
+				<h3>Yaamy has it all</h3>
+				<p>
+					<font size=+2>Gearing up for Indy</font>
+				</p>
+				<p>
+					<font size=+2>Classic Cortez</font>
+				</p>
+				<p>
+					<font size=+2>Coveted Collabs</font>
+				</p>
+                <iframe width="420" height="315"
+                    src="https://youtube.com/embed/z4wijnEVOWM">
+                </iframe>
+			</div>
+			<div class="section">
+				<div class="article">
+					<h2>Today's deal</h2>
+					<p>
+                    New deals. Every day. Shop our Deal of the Day, Lightning Deals and more daily deals and limited-time sales. See deals you're watching <a href="products.html"><i><font color=blue>here</font color></i></a>, or let the deals come to you by receiving our daily deals <a href="https://mail.google.com"><i><font color=blue>email.</font color></i></a>
+					</p>
+				</div>
+				<div class="newsletter">
+					<img src="images/contact.jpg" alt="">
+					<p>
+						Need our Assistance????<span>Contact Us</span><a href="contact.html">here</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<div class="connect">
+                <a href="https://twitter.com/" id="twitter">twitter</a>
+                <a href="http://facebook.com" id="facebook">facebook</a>
+                <a href="http://googleplus.com" id="googleplus">googleplus</a>
+                <a href="http://pinterest.com" id="pinterest">pinterest</a>
+			</div>
+			<p>
+            &copy; copyright 2017 | created by Amita Haridas and Mariya Antony.
+
+			</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<style>
+    
+    *{
+        
+        margin:0px;
+        
+        padding:0px;
+        
+    }
+
+body{
+    
+    font-family:Tahoma, Geneva, sans-serif;
+    
+}
+
+#container{
+    
+    width:550px;
+    
+    background-color:#C0C0C0 ;
+    
+    margin:auto;
+    
+    margin-top:100px;
+    
+    margin-bottom:10px;
+    
+    box-shadow:0 0 3px #999;
+    
+}
+
+#container_body{
+    
+    padding:20px;
+    
+}
+
+.form_title{
+    
+    font-size:35px;
+    
+    color:#141823;
+    
+    text-align:center;
+    
+    padding:10px;
+    
+    font-weight:normal;
+    
+}
+
+.head_para{
+    
+    font-size:19px;
+    
+    color:#99a2a7;
+    
+    text-align:center;
+    
+    font-weight:normal;
+    
+}
+
+#form_name{
+    
+    padding:25px 0 0 15px;
+    
+}
+
+.firstnameorlastname{
+    
+    margin-right:20px;
+    
+}
+
+.input_name{
+    
+    width:207px;
+    
+    padding:5px;
+    
+    font-size:18px;
+    
+}
+
+#email_form{
+    
+    clear:both;
+    
+    padding:15px 0 10px 0px;
+    
+}
+
+.input_email{
+    
+    width:434px;
+    
+    padding:5px;
+    
+    font-size:18px;
+    
+}
+
+#Re_email_form{
+    
+    padding:10px 0 10px 0px;
+    
+}
+
+.input_Re_email{
+    
+    width:434px;
+    
+    padding:5px;
+    
+    font-size:18px;
+    
+}
+
+#password_form{
+    
+    padding:10px 0 10px 0px;
+    
+}
+
+.input_password{
+    
+    width:434px;
+    
+    padding:5px;
+    
+    font-size:18px;
+    
+}
+
+.birthday_title{
+    
+    font-size:16px;
+    
+    color:black;
+    
+    font-weight:normal;
+    
+    padding:0 0 10px 0;
+    
+}
+
+select{
+    
+    padding:5px;
+    
+}
+
+#birthday{
+    
+    font-size:12px;
+    
+    color:#8b919d;
+    
+    padding-top:10px;
+    
+}
+
+#radio_button{
+    
+    padding:10px 0 0 0;
+    
+}
+
+#button{
+    
+    font-size:14px;
+    
+    color:#FFF;
+    
+    text-align:center;
+    
+    background-color:#3B5998;
+    
+    padding:10px;
+    
+    margin-top:10px;
+    
+    cursor: pointer;
+    
+}
+#button1{
+    
+    font-size:14px;
+    
+    color:#FFF;
+    
+    text-align:center;
+    
+    background-color:#3B5998;
+    
+    padding:10px;
+    
+    margin-top:10px;
+    
+    cursor: pointer;
+    
+}
+
+
+#errorBox{
+    
+    color:#F00;
+    
+}
+
+
+
+
+
+
+</style>
+<body>
+    
+    <div id="header">
+        <div class="section">
+            <div class="logo">
+                <a href="index.html">yaamy</a>
+            </div>
+         </div>
+        </div>
+    
+    <div id="emptyDiv">
+        
+        
+        
+    </div>
+    
+    <div id="description"></div>
+    
+    
+    
+    <div id="container">
+        
+        <div id="container_body">
+            
+            <div>
+                
+                <h2 class="form_title">Login</h2>
+                
+                
+                
+            </div>
+            <!--Form  start-->
+            
+            <div id="form_name">
+               <form name="form" action="home.html" >
+                <div id="email_form">
+                    
+                    <input type="text" name="Email" value=""  placeholder="Username" class="input_email" id="text1">
+                        
+                        
+                
+                </div>
+                
+                <div id="password_form">
+                    
+                    <input type="password" name="Password" value=""  placeholder="Password" class="input_password" id="text2">
+                        
+                        </div>
+                
+                <div>
+                    
+                  <input type="button" value="Login"  onclick="javascript:validate()" id="button" />
+                    
+                </div>
+                <div>
+                    
+                    <input type="button" value="Register"  onclick="Submit()" id="button1" />
+                    
+                </div>
+                
+                
+                </form>
+                
+            </div>
+            
+            <!--form ends-->
+            
+        </div>
+        
+    </div>
+    
+    <div id="footer">
+        <div>
+            <div class="connect">
+                <a href="https://twitter.com/" id="twitter">twitter</a>
+                <a href="http://facebook.com" id="facebook">facebook</a>
+                <a href="http://googleplus.com" id="googleplus">googleplus</a>
+                <a href="http://pinterest.com" id="pinterest">pinterest</a>
+            </div>
+            <p>
+            &copy; copyright 2017 | created by Amita Haridas and Mariya Antony.
+            
+            </p>
+        </div>
+    </div>
+
+   </body>
+    <!--container ends-->
+ 
+<script type="text/javascript">
+    function validate()
+    {
+        
+        if(   document.getElementById("text1").value == "admin"
+           && document.getElementById("text2").value == "Admin@123" )
+           {
+               location.href="home.html";
+           }
+           else
+           {
+               alert( "Invalid username or password" );
+               location.href="login.html";
+           }
+    }
+
+function Submit(){
+    document.getElementById("button1").onclick = function () {
+        
+        location.href = "registration.html";
+        
+    };
+}
+</script>
+</html>
